@@ -1,0 +1,51 @@
+FILE_SETTINGS:
+  OUTPUT_DIR: "output/images"
+  INPUT_FILE: "texts/Company-Shorter-Form1000.txt"
+  EXTENSION: "jpg"      # 图像文件扩展名
+  NAME_FORMAT: 2        # 生成的图像命名格式，例如 000001.jpg
+  FONTS: ch           # 如果未指定字体文件，可设为 null 或字体文件路径
+
+TEXT_SETTINGS:
+  LANGUAGE: "ch"
+  CORPUS: "texts/Company-Shorter-Form1000.txt"
+  CORPUS_TYPE: "CORPUS"   # 或 "RANDOM"
+  INCLUDE_LETTERS: False
+  INCLUDE_NUMBERS: False
+  INCLUDE_SYMBOLS: False
+  LENGTH: 0
+  RANDOM: False
+  USE_WIKIPEDIA: False
+  STROKE_WIDTH: 0
+  STROKE_FILL: "(255,255,255)"
+  COLOR: "(0,0,0)"
+
+  SIZE: 32                # 初始文字大小（或生成文字图像时的参考高度）
+  MIN_CHAR: 1             # 最小字符数
+  MAX_CHAR: 20            # 最大字符数
+
+  STROKE_WIDTH: 0
+  STROKE_FILL: "(0,0,0)"
+  HEIGHT: 0               # 若 >0，则最终图像高度将会等比缩放到这个值
+
+IMAGE_FORMAT_SETTINGS:
+  FORMAT: 32              # 比特深度？(或图像格式之类)，实际需求可调整
+  WIDTH: 0                # 若 >0 则为最终图像指定固定宽度；<=0 则自适应
+  ALIGNMENT: 1
+  ORIENTATION: 0
+  TEXT_COLOR: "#282828"
+  SPACE_WIDTH: 1.0
+  MARGINS: "5,4,5,4"      # 边距(上,左,下,右)
+  FIT: False              # 是否对文字图做紧凑裁剪
+  BBOX: False             # 是否生成边界框
+  LABEL_ONLY: False       # 是否仅生成标签，不输出图像
+
+DISTORTION_SETTINGS:
+  SKEW_ANGLE: 10
+  RANDOM_SKEW: True
+  DISTORTION: 0
+  DISTORTION_ORIENTATION: 0
+
+OTHER_SETTINGS:
+  BACKGROUND: 0
+  HANDWRITTEN: False
+  NUM_WORKERS: 8

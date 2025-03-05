@@ -1,0 +1,19 @@
+# 读到 python 里是个 dict
+# 
+# name: 练习
+# age : 18
+# job : study
+# 结果 {'name': '练习', 'age': 18, 'job': 'study'}
+
+# 
+name: "lianxi"
+age: 18
+status: null
+isStudent: true
+frients:
+    - chen
+    - fan
+    - fen
+teacher:
+    name: "wei"
+    age: 30
